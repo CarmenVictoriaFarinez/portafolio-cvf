@@ -34,15 +34,7 @@ const Header = () => {
     const classes = useStyles()
     return (
         <Box className ={classes.typedContainer} >
-            <Grid container justify ="center">
-            <img src="https://user-images.githubusercontent.com/60799456/92513148-7450c580-f1d5-11ea-93b9-25ca8356236a.jpeg" alt="" style={{ width:"100%"}}/>
-           </Grid>
-           <Grid container justify ="center">
-           <a href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-burger-queen-api-client/files/5189324/cv_carmen.pdf" download="cv_carmen.pdf">
-            <img src="https://user-images.githubusercontent.com/60799456/92436778-18e9ed80-f16b-11ea-8e42-4de33928eb29.png" alt="" style={{ width:"60%"}}/>
-            </a>
-            </Grid>
-           <Typography  className ={classes.title} variant ="h4">
+             <Typography  className ={classes.title} variant ="h4">
            <Typed
                 strings={['Mi nombre es Carmen Victoria']}typeSpeed={40}/>
             </Typography>
@@ -54,6 +46,15 @@ const Header = () => {
                 typeSpeed= {80} 
                 loop/>
             </Typography>
+            <Grid container justify ="center">
+            <img src="https://user-images.githubusercontent.com/60799456/92513800-7e26f880-f1d6-11ea-9193-ff7b05f82341.png" alt="" style={{ width:"30%"}}/>
+           </Grid>
+           <Grid container justify ="center">
+           <a href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-burger-queen-api-client/files/5189324/cv_carmen.pdf" download="cv_carmen.pdf">
+            <img src="https://user-images.githubusercontent.com/60799456/92436778-18e9ed80-f16b-11ea-8e42-4de33928eb29.png" alt="" style={{ width:"50%"}}/>
+            </a>
+            </Grid>
+          
             
         
         </Box>
