@@ -34,7 +34,7 @@ const classes = useStyles();
             <CardActionArea>
                 <CardMedia component="img"
                 alt ="Proyecto 1"
-                height="140"
+                height="160"
                 image= {project1}
                 />
                 <CardContent>
@@ -56,12 +56,14 @@ const classes = useStyles();
                 </CardActions>
             </CardActionArea>
             </Card>
+            </Grid>
             { /* Project 2 */ }
+            <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
             <CardActionArea>
                 <CardMedia component="img"
                 alt ="Proyecto 2"
-                height="140"
+                height="180"
                 image= {project2}
                 />
                 <CardContent>
@@ -83,12 +85,14 @@ const classes = useStyles();
                 </CardActions>
             </CardActionArea>
             </Card>
+            </Grid>
             { /* Project 3 */ }
+            <Grid item xs={12} sm={8} md={6}>
             <Card className={classes.cardContainer}>
             <CardActionArea>
                 <CardMedia component="img"
                 alt ="Proyecto 3"
-                height="140"
+                height="160"
                 image= {project3}
                 />
                 <CardContent>
@@ -111,7 +115,6 @@ const classes = useStyles();
                 </CardActions>
             </CardActionArea>
             </Card>
-
             </Grid>
         </Grid>
         </Box>
