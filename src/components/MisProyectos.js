@@ -48,10 +48,12 @@ const classes = useStyles();
                 </CardContent>
                 </CardActionArea>
                 <CardActions >
-                    <Button  style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    <Button target="_blank" href= "https://carmenvictoriafarinez.github.io/LIM012-fe-social-network/src/"
+                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
                         Website
                     </Button>
-                    <Button  style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    <Button  target="_blank" href= "https://github.com/CarmenVictoriaFarinez/LIM012-fe-social-network"
+                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
                         Github
                     </Button>
                 </CardActions>
@@ -78,10 +80,12 @@ const classes = useStyles();
                 </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    <Button target="_blank" href="https://carmenvictoriafarinez.github.io/LIM012-fe-burger-queen-api-client/"
+                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
                         Website
                     </Button>
-                    <Button style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-burger-queen-api-client"
+                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
                         Github
                     </Button>
                 </CardActions>
@@ -109,10 +113,12 @@ const classes = useStyles();
                 </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-md-links"
+                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
                         Website
                     </Button>
-                    <Button style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-md-links"
+                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
                         Github
                     </Button>
                 </CardActions>

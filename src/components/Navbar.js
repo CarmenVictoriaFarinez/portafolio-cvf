@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import MobilRightMenuSlider from '@material-ui/core/Drawer';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
+import Whatsapp from '@material-ui/icons/WhatsApp';
+
+
 import {
+    BottomNavigationAction,
+    Grid,
     AppBar,
     Toolbar,
     ListItem,
@@ -10,13 +16,12 @@ import {
     Avatar,
     Divider,
     List,
-    Typography,
     Box,
     ListItemIcon
 } from '@material-ui/core'
 
 import {
-    AssignmentInd, Home, Apps, ContactMail, Toys
+    Home, Apps, Toys
 } from '@material-ui/icons'
 import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
 
@@ -85,6 +90,7 @@ const Navbar = () => {
 
             <Box component='nav'>
                 <AppBar position='static' style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+
                     <Toolbar>
                         <IconButton onClick ={toggleSLider("right", true)}>
                             <Toys />
@@ -92,7 +98,10 @@ const Navbar = () => {
                         <MobilRightMenuSlider 
                         anchor="right"
                         open={state.right} onClose ={toggleSLider("right", false)}
-                        > {sideList("right")}</MobilRightMenuSlider>
+                        > 
+                        {sideList("right")}
+                        <Footer/>
+                        </MobilRightMenuSlider>
                     </Toolbar>
                 </AppBar>
             </Box>
