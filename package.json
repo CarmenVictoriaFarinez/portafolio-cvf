@@ -21,7 +21,8 @@
     "serve": "^11.3.2"
   },
   "scripts": {
-    "start": "serve -p $PORT build",
+    "start": "serve -p $PORT dist",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
