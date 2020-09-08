@@ -99,7 +99,7 @@ const Navbar = () => {
                         <IconButton onClick ={toggleSLider("right", true)}>
                             <Toys />
                         </IconButton>
-                        <a href="download/cv_carmen.pdf" download="cv_carmen.pdf">
+                        <a href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-burger-queen-api-client/files/5189324/cv_carmen.pdf" download="cv_carmen.pdf">
                          <img src="https://user-images.githubusercontent.com/60799456/92436778-18e9ed80-f16b-11ea-8e42-4de33928eb29.png" alt="" style={{ width:"40%"}}/>
                         </a>
                         <MobilRightMenuSlider 
