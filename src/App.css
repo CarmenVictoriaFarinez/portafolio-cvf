@@ -1,0 +1,9 @@
+body{
+  /* background: url(images/fondo.jpg) no-repeat center center fixed;*/ 
+  background-color: rgb(165, 183, 235);
+  -webkit-background: cover;
+  -moz-background: cover;
+  -o-background: cover;
+  background: cover;
+
+}
