@@ -41,11 +41,12 @@ const classes = useStyles();
                 <Typography gutterBottom variant="h5">
                 RED SOCIAL MOVES
                 </Typography >
-                <Typography variant="body2" color="textSecundary" component="p">
+                <Typography variant="body2" color="textSecundary" component="p" >
                 MOVES es un aplicación (SPA), responsiva en la que podamos escribir, leer, actualizar y eliminar datos. 
                 Es una red social para los amantes del baile de todos los géneros musicales. Este proyecto fue realizado utilizando la metodología Scrum.
                 </Typography>
                 </CardContent>
+                </CardActionArea>
                 <CardActions>
                     <Button size="small color="primary>
                         Website
@@ -54,7 +55,7 @@ const classes = useStyles();
                         Github
                     </Button>
                 </CardActions>
-            </CardActionArea>
+            
             </Card>
             </Grid>
             { /* Project 2 */ }
@@ -75,6 +76,7 @@ const classes = useStyles();
                 Su objetivo es facilitar el sistema de pedidos de un pequeño restaurante.
                 </Typography>
                 </CardContent>
+                </CardActionArea>
                 <CardActions>
                     <Button size="small color="primary>
                         Website
@@ -83,7 +85,7 @@ const classes = useStyles();
                         Github
                     </Button>
                 </CardActions>
-            </CardActionArea>
+            
             </Card>
             </Grid>
             { /* Project 3 */ }
@@ -105,6 +107,7 @@ const classes = useStyles();
                 y reportar algunas estadísticas.
                 </Typography>
                 </CardContent>
+                </CardActionArea>
                 <CardActions>
                     <Button size="small color="primary>
                         Website
@@ -113,7 +116,7 @@ const classes = useStyles();
                         Github
                     </Button>
                 </CardActions>
-            </CardActionArea>
+           
             </Card>
             </Grid>
         </Grid>

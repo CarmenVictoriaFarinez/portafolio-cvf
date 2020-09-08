@@ -5,5 +5,12 @@ body{
   -moz-background: cover;
   -o-background: cover;
   background: cover;
+  
 
+}
+.img-descarga{
+  display: flex;
+  flex-direction: row;
+  width:"40%";
+  margin-left: "760%";
 }

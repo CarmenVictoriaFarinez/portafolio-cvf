@@ -25,7 +25,7 @@ const theme = createMuiTheme();
 const useStyles = makeStyles({
     menuContainer: {
         width: 250,
-        backgroundColor: 'blue',
+        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
         height: '30rem',
     },
     avatar: {
@@ -46,19 +46,9 @@ const menuItems = [
         listPath: "/"
     },
     {
-        listIcon: <AssignmentInd />,
-        listText: 'Skills',
-        listPath: "/skills"
-    },
-    {
         listIcon: <Apps />,
         listText: 'Mis Proyectos',
         listPath: "/misproyectos"
-    },
-    {
-        listIcon: <ContactMail />,
-        listText: 'Contactame',
-        listPath: "/contactame"
     }
 ]
 
@@ -94,17 +84,14 @@ const Navbar = () => {
         < >
 
             <Box component='nav'>
-                <AppBar position='static' style={{ background: 'blue' }}>
+                <AppBar position='static' style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
                     <Toolbar>
                         <IconButton onClick ={toggleSLider("right", true)}>
                             <Toys />
                         </IconButton>
-                        <a href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-burger-queen-api-client/files/5189324/cv_carmen.pdf" download="cv_carmen.pdf">
-                         <img src="https://user-images.githubusercontent.com/60799456/92436778-18e9ed80-f16b-11ea-8e42-4de33928eb29.png" alt="" style={{ width:"40%"}}/>
-                        </a>
                         <MobilRightMenuSlider 
-                        anchor="left"
-                        open={state.right} onClose ={toggleSLider("left", false)}
+                        anchor="right"
+                        open={state.right} onClose ={toggleSLider("right", false)}
                         > {sideList("right")}</MobilRightMenuSlider>
                     </Toolbar>
                 </AppBar>
