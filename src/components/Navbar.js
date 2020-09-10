@@ -3,6 +3,7 @@ import MobilRightMenuSlider from '@material-ui/core/Drawer';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import Whatsapp from '@material-ui/icons/WhatsApp';
+import LinkedIn from '@material-ui/icons/LinkedIn';
 
 
 import {
@@ -95,6 +96,7 @@ const Navbar = () => {
                         <IconButton onClick ={toggleSLider("right", true)}>
                             <Toys />
                         </IconButton>
+                        
                         <MobilRightMenuSlider 
                         anchor="right"
                         open={state.right} onClose ={toggleSLider("right", false)}
@@ -103,6 +105,11 @@ const Navbar = () => {
                         <Footer/>
                         </MobilRightMenuSlider>
                     </Toolbar>
+                  
+                            <IconButton>
+                                <LinkedIn/>
+                            </IconButton>
+                    
                 </AppBar>
             </Box>
         </>
