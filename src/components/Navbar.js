@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import Whatsapp from '@material-ui/icons/WhatsApp';
 import LinkedIn from '@material-ui/icons/LinkedIn';
+import GitHub from '@material-ui/icons/GitHub';
+import { Email } from '@material-ui/icons';
 
 
 import {
-    BottomNavigationAction,
-    Grid,
     AppBar,
     Toolbar,
     ListItem,
@@ -42,7 +42,17 @@ const useStyles = makeStyles({
     },
     listItem: {
         color: 'white'
-    }
+    },
+    iconRedes: {
+        marginLeft: theme.spacing(100),
+        "& .MuiSvgIcon-root": {
+            fill: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+            "&:hover":{
+                fill: "violet",
+                fontSize: "1.8rem"
+            }
+        }
+    },
 });
 
 const menuItems = [
@@ -60,25 +70,25 @@ const menuItems = [
 
 const Navbar = () => {
     const [state, setState] = useState({
-        right:false
+        right: false
     })
 
     const toggleSLider = (slider, open) => () => {
-        setState({...state, [slider]: open})
+        setState({ ...state, [slider]: open })
     }
 
     const classes = useStyles();
 
     const sideList = slider => (
-        <Box 
-        className={classes.menuContainer} component='div'
-        onClick={toggleSLider(slider, false)}
+        <Box
+            className={classes.menuContainer} component='div'
+            onClick={toggleSLider(slider, false)}
         >
             <Avatar className={classes.avatar} src='https://user-images.githubusercontent.com/60799456/92427042-1084b900-f151-11ea-9e1c-52760e46179c.JPG' alt='Cindy Baker' />
             <Divider />
             <List>
                 {menuItems.map((IsItem, key) => (
-                    <ListItem button key={key} component={Link} to= {IsItem.listPath} >
+                    <ListItem button key={key} component={Link} to={IsItem.listPath} >
                         <ListItemIcon className={classes.listItem} >{IsItem.listIcon}</ListItemIcon>
                         <ListItemText className={classes.listItem} primary={IsItem.listText} />
                     </ListItem>
@@ -93,23 +103,33 @@ const Navbar = () => {
                 <AppBar position='static' style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
 
                     <Toolbar>
-                        <IconButton onClick ={toggleSLider("right", true)}>
+                        <IconButton onClick={toggleSLider("right", true)}>
                             <Toys />
                         </IconButton>
-                        
-                        <MobilRightMenuSlider 
-                        anchor="right"
-                        open={state.right} onClose ={toggleSLider("right", false)}
-                        > 
-                        {sideList("right")}
-                        <Footer/>
+
+                        <MobilRightMenuSlider
+                            anchor="right"
+                            open={state.right} onClose={toggleSLider("right", false)}
+                        >
+                            {sideList("right")}
+                            <Footer />
                         </MobilRightMenuSlider>
                     </Toolbar>
-                  
-                            <IconButton>
-                                <LinkedIn/>
-                            </IconButton>
-                    
+                    <ListItemIcon className={classes.iconRedes}>
+                        <IconButton href ="https://wa.link/ENCI" target="_blank">
+                            <Whatsapp />
+                        </IconButton>
+                        <IconButton target="_blank" href="https://www.linkedin.com/in/engineercvf/" >
+                            <LinkedIn />
+                        </IconButton>
+                        <IconButton target="_blank" href="https://github.com/CarmenVictoriaFarinez">
+                            <GitHub />
+                        </IconButton>
+                        <IconButton target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSczfm55rfx63SAHr2kEBKhMZe_ZAVztR3ReOXU9kELz6rx6GQ/viewform">
+                            <Email />
+                        </IconButton>
+                    </ListItemIcon>
+
                 </AppBar>
             </Box>
         </>
