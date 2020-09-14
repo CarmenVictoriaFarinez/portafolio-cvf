@@ -8,6 +8,7 @@ import GitHub from '@material-ui/icons/GitHub';
 import { Email } from '@material-ui/icons';
 
 
+
 import {
     AppBar,
     Toolbar,
@@ -18,7 +19,7 @@ import {
     Divider,
     List,
     Box,
-    ListItemIcon
+    ListItemIcon, BottomNavigation, BottomNavigationAction
 } from '@material-ui/core'
 
 import {
@@ -42,16 +43,6 @@ const useStyles = makeStyles({
     },
     listItem: {
         color: 'white'
-    },
-    iconRedes: {
-        marginLeft: theme.spacing(100),
-        "& .MuiSvgIcon-root": {
-            fill: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-            "&:hover":{
-                fill: "violet",
-                fontSize: "1.8rem"
-            }
-        }
     },
 });
 
@@ -102,7 +93,7 @@ const Navbar = () => {
             <Box component='nav'>
                 <AppBar position='static' style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
 
-                    <Toolbar>
+                    <Toolbar >
                         <IconButton onClick={toggleSLider("right", true)}>
                             <Toys />
                         </IconButton>
@@ -114,21 +105,14 @@ const Navbar = () => {
                             {sideList("right")}
                             <Footer />
                         </MobilRightMenuSlider>
+                        
+                            {menuItems.map((IsItem, key) => (
+                                <ListItem  button key={key} component={Link} to={IsItem.listPath} >
+                                <ListItemText className={classes.listItem} primary={IsItem.listText} />
+                                </ListItem>
+                            ))} 
                     </Toolbar>
-                    <ListItemIcon className={classes.iconRedes}>
-                        <IconButton href ="https://wa.link/ENCI" target="_blank">
-                            <Whatsapp />
-                        </IconButton>
-                        <IconButton target="_blank" href="https://www.linkedin.com/in/engineercvf/" >
-                            <LinkedIn />
-                        </IconButton>
-                        <IconButton target="_blank" href="https://github.com/CarmenVictoriaFarinez">
-                            <GitHub />
-                        </IconButton>
-                        <IconButton target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSczfm55rfx63SAHr2kEBKhMZe_ZAVztR3ReOXU9kELz6rx6GQ/viewform">
-                            <Email />
-                        </IconButton>
-                    </ListItemIcon>
+
 
                 </AppBar>
             </Box>

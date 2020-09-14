@@ -17,6 +17,3 @@ body{
 .MuiIconButton-label{
   flex-direction: row-reverse;
 }
-.MuiIconButton-root{
-  size: 30px;
-}
