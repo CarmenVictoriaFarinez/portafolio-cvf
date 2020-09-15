@@ -8,6 +8,7 @@ import project1 from '../images/project1.jpg';
 import project2 from '../images/project2.png';
 import project3 from '../images/project3.jpg';
 import project4 from '../images/project4.png';
+import project5 from '../images/project5.png';
 
 
 const useStyles = makeStyles({
@@ -50,11 +51,11 @@ const classes = useStyles();
                 </CardActionArea>
                 <CardActions >
                     <Button target="_blank" href= "https://carmenvictoriafarinez.github.io/LIM012-fe-social-network/src/"
-                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    style={{ background: '#CD5360' }}>
                         Website
                     </Button>
                     <Button  target="_blank" href= "https://github.com/CarmenVictoriaFarinez/LIM012-fe-social-network"
-                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    style={{ background:  '#CD5360'  }}>
                         Github
                     </Button>
                 </CardActions>
@@ -82,11 +83,11 @@ const classes = useStyles();
                 </CardActionArea>
                 <CardActions>
                     <Button target="_blank" href="https://lim012burgerqueenapiclient.web.app/"
-                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    style={{ background: '#B37D4E' }}>
                         Website
                     </Button>
                     <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-burger-queen-api-client"
-                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    style={{ background: '#B37D4E' }}>
                         Github
                     </Button>
                 </CardActions>
@@ -115,11 +116,11 @@ const classes = useStyles();
                 </CardActionArea>
                 <CardActions>
                     <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-md-links"
-                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    style={{ background: '#438496' }}>
                         Website
                     </Button>
                     <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-md-links"
-                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    style={{ background: '#438496'  }}>
                         Github
                     </Button>
                 </CardActions>
@@ -137,22 +138,22 @@ const classes = useStyles();
                 />
                 <CardContent>
                 <Typography gutterBottom variant="h5">
-                DATA LOVERS Olympic History
+                Data Lovers Olympic History
                 </Typography >
                 <Typography variant="body2" color="textSecundary" component="p">
                 El objetivo de este proyecto fue aprender a visualizar y manipular data. Esta app permite al usuario 
-                visualizar a los atletas por nombre, deporte practicado y pais representado, a partir de esa data, 
-                permite ordenarla alfabeticamente y filtrar a los atletas por deporte.
+                visualizar a los atletas por nombre, deporte practicado y pais representado, a partir de esa data, permite 
+                ordenarla alfabeticamente y filtrar a los atletas por deporte.
                 </Typography>
                 </CardContent>
                 </CardActionArea>
                 <CardActions>
                     <Button target="_blank" href="https://carmenvictoriafarinez.github.io/LIM012-data-lovers/src/"
-                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    style={{ background: '#CD5360' }}>
                         Website
                     </Button>
                     <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/LIM012-data-lovers"
-                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    style={{ background: '#CD5360' }}>
                         Github
                     </Button>
                 </CardActions>
@@ -166,26 +167,25 @@ const classes = useStyles();
                 <CardMedia component="img"
                 alt ="Proyecto 5"
                 height="160"
-                image= {project3}
+                image= {project5}
                 />
                 <CardContent>
                 <Typography gutterBottom variant="h5">
                 Piano React
                 </Typography >
                 <Typography variant="body2" color="textSecundary" component="p">
-                El objetivo de este proyecto fue crear una librería implementada en JavaScript, y ejecutada usando Node.js, 
-                que lea y analice archivos en formato Markdown, para verificar los links que contengan 
-                y reportar algunas estadísticas.
+                El objetivo de este proyecto fue aprender los conceptos básicos de React, tuve la inicitiva de inscribirme
+                en un WorkShop de Iniciación, en el cual fuimos guiados para finalmente, obtener este hermoso Piano.
                 </Typography>
                 </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-md-links"
-                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    <Button target="_blank" href="https://carmenvictoriafarinez.github.io/workshop-react-piano/"
+                    style={{ background: '#B37D4E' }}>
                         Website
                     </Button>
-                    <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-md-links"
-                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                    <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/workshop-react-piano"
+                    style={{ background: '#B37D4E'  }}>
                         Github
                     </Button>
                 </CardActions>

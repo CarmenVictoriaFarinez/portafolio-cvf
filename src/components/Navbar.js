@@ -19,7 +19,7 @@ import {
     Divider,
     List,
     Box,
-    ListItemIcon, BottomNavigation, BottomNavigationAction
+    ListItemIcon
 } from '@material-ui/core'
 
 import {
@@ -30,9 +30,10 @@ import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
 // CSS STYLE
 const theme = createMuiTheme();
 const useStyles = makeStyles({
+   
     menuContainer: {
         width: 250,
-        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+        background: '#CD5360',
         height: '30rem',
     },
     avatar: {
@@ -91,7 +92,7 @@ const Navbar = () => {
         < >
 
             <Box component='nav'>
-                <AppBar position='static' style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                <AppBar position='static' style={{ background: '#286DA8' }}>
 
                     <Toolbar >
                         <IconButton onClick={toggleSLider("right", true)}>

@@ -1,6 +1,6 @@
 body{
   /* background: url(images/fondo.jpg) no-repeat center center fixed;*/ 
-  background-color: rgb(165, 183, 235);
+  background-color: #4ABDAC;
   -webkit-background: cover;
   -moz-background: cover;
   -o-background: cover;
@@ -14,6 +14,6 @@ body{
   width:"40%";
   margin-left: "760%";
 }
-.MuiIconButton-label{
-  flex-direction: row-reverse;
+.MuiGrid-container {
+  background-color:#FFFFFF;
 }

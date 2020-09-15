@@ -7,6 +7,7 @@ import Whatsapp from '@material-ui/icons/WhatsApp';
 import LinkedIn from '@material-ui/icons/LinkedIn';
 import GitHub from '@material-ui/icons/GitHub';
 import { Email } from '@material-ui/icons';
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
 // CSS STYLES
 
@@ -14,9 +15,9 @@ const useStyles = makeStyles(theme => ({
     iconRedes: {
         horizontal: 'right',
         "& .MuiSvgIcon-root": {
-            fill: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+            fill: "#286DA8",
             "&:hover":{
-                fill: "violet",
+                fill: "#CD5360",
                 fontSize: "1.8rem"
             }
         }
@@ -27,10 +28,10 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(15),
     },
     title: {
-        color: "violet",
+        color: "#CD5360",
     },
     subtitle: {
-        color: "red",
+        color: "#286DA8",
         marginBottom: "3rem",
     },
     typedContainer: {
@@ -78,14 +79,11 @@ const Header = () => {
                     <Email />
                 </IconButton>
             </ListItemIcon>
-            <Grid container justify="center">
-                <a href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-burger-queen-api-client/files/5189324/cv_carmen.pdf" download="cv_carmen.pdf">
-                    <img src="https://user-images.githubusercontent.com/60799456/92436778-18e9ed80-f16b-11ea-8e42-4de33928eb29.png" alt="" style={{ width: "50%" }} />
-                </a>
+            <Grid container justify="center"className={classes.iconRedes} >
+                <IconButton href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-burger-queen-api-client/files/5189324/cv_carmen.pdf">
+                <CloudDownloadIcon/>
+                </IconButton>
             </Grid>
-           
-
-
         </Box>
     )
 }
