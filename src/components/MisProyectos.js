@@ -7,6 +7,7 @@ import Navbar from './Navbar';
 import project1 from '../images/project1.jpg';
 import project2 from '../images/project2.png';
 import project3 from '../images/project3.jpg';
+import project4 from '../images/project4.png';
 
 
 const useStyles = makeStyles({
@@ -150,7 +151,7 @@ const classes = useStyles();
                     style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
                         Website
                     </Button>
-                    <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/LIM012-data-lovers
+                    <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/LIM012-data-lovers"
                     style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
                         Github
                     </Button>
@@ -163,7 +164,7 @@ const classes = useStyles();
             <Card className={classes.cardContainer}>
             <CardActionArea>
                 <CardMedia component="img"
-                alt ="Proyecto 3"
+                alt ="Proyecto 5"
                 height="160"
                 image= {project3}
                 />
