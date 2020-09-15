@@ -125,6 +125,72 @@ const classes = useStyles();
            
             </Card>
             </Grid>
+            { /* Project 4 */ }
+            <Grid item xs={12} sm={8} md={6}>
+            <Card className={classes.cardContainer}>
+            <CardActionArea>
+                <CardMedia component="img"
+                alt ="Proyecto 4"
+                height="160"
+                image= {project4}
+                />
+                <CardContent>
+                <Typography gutterBottom variant="h5">
+                DATA LOVERS- OLYMPIC HISTORY
+                </Typography >
+                <Typography variant="body2" color="textSecundary" component="p">
+                El objetivo de este proyecto fue aprender a visualizar y manipular data. Esta app permite al usuario visualizar a los 
+                atletas por nombre, deporte practicado y pais representado, a partir de esa data, permite ordenarla alfabeticamente 
+                y filtrar a los atletas por deporte.
+                </Typography>
+                </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <Button target="_blank" href="https://carmenvictoriafarinez.github.io/LIM012-data-lovers/src/"
+                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                        Website
+                    </Button>
+                    <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/LIM012-data-lovers
+                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                        Github
+                    </Button>
+                </CardActions>
+           
+            </Card>
+            </Grid>
+            { /* Project 5 */ }
+            <Grid item xs={12} sm={8} md={6}>
+            <Card className={classes.cardContainer}>
+            <CardActionArea>
+                <CardMedia component="img"
+                alt ="Proyecto 3"
+                height="160"
+                image= {project3}
+                />
+                <CardContent>
+                <Typography gutterBottom variant="h5">
+                Piano React
+                </Typography >
+                <Typography variant="body2" color="textSecundary" component="p">
+                El objetivo de este proyecto fue crear una librería implementada en JavaScript, y ejecutada usando Node.js, 
+                que lea y analice archivos en formato Markdown, para verificar los links que contengan 
+                y reportar algunas estadísticas.
+                </Typography>
+                </CardContent>
+                </CardActionArea>
+                <CardActions>
+                    <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-md-links"
+                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                        Website
+                    </Button>
+                    <Button target="_blank" href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-md-links"
+                    style={{ background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' }}>
+                        Github
+                    </Button>
+                </CardActions>
+           
+            </Card>
+            </Grid>
         </Grid>
         </Box>
     )
