@@ -132,17 +132,17 @@ const classes = useStyles();
             <CardActionArea>
                 <CardMedia component="img"
                 alt ="Proyecto 4"
-                height="160"
+                height="180"
                 image= {project4}
                 />
                 <CardContent>
                 <Typography gutterBottom variant="h5">
-                DATA LOVERS- OLYMPIC HISTORY
+                DATA LOVERS Olympic History
                 </Typography >
                 <Typography variant="body2" color="textSecundary" component="p">
-                El objetivo de este proyecto fue aprender a visualizar y manipular data. Esta app permite al usuario visualizar a los 
-                atletas por nombre, deporte practicado y pais representado, a partir de esa data, permite ordenarla alfabeticamente 
-                y filtrar a los atletas por deporte.
+                El objetivo de este proyecto fue aprender a visualizar y manipular data. Esta app permite al usuario 
+                visualizar a los atletas por nombre, deporte practicado y pais representado, a partir de esa data, 
+                permite ordenarla alfabeticamente y filtrar a los atletas por deporte.
                 </Typography>
                 </CardContent>
                 </CardActionArea>
