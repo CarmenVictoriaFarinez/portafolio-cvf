@@ -89,7 +89,7 @@ const Navbar = () => {
         < >
 
             <Box component='nav'>
-                <AppBar position='static' style={{ background: '#286DA8' }}>
+                <AppBar position='fixed' style={{ background: '#286DA8' }}>
 
                     <Toolbar >
                         <IconButton onClick={toggleSLider("right", true)}>

@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
         marginBottom: "3rem",
     },
     typedContainer: {
-        marginTop: theme.spacing(5),
+        marginTop: theme.spacing(10),
         transform: "traslate(-50%, -50%)",
         width: "100vw",
         textAlign: "center",
