@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import MobilRightMenuSlider from '@material-ui/core/Drawer';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
-import Whatsapp from '@material-ui/icons/WhatsApp';
-import LinkedIn from '@material-ui/icons/LinkedIn';
-import GitHub from '@material-ui/icons/GitHub';
-import { Email } from '@material-ui/icons';
+
 
 
 
@@ -43,7 +40,7 @@ const useStyles = makeStyles({
         height: theme.spacing(13)
     },
     listItem: {
-        color: 'white'
+        color: 'white',
     },
 });
 

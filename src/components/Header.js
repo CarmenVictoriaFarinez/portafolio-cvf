@@ -1,6 +1,8 @@
 import React from 'react'
-import { Typography, Grid, Box,   ListItemIcon,
-    IconButton, } from '@material-ui/core';
+import {
+    Typography, Grid, Box, ListItemIcon,
+    IconButton, ListItem
+} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Typed from 'react-typed';
 import Whatsapp from '@material-ui/icons/WhatsApp';
@@ -12,11 +14,19 @@ import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 // CSS STYLES
 
 const useStyles = makeStyles(theme => ({
+    picMeContainer:{
+        width: theme.spacing(13),
+        height: theme.spacing(13)
+    },
+    aboutMeContainer: {
+        textAlign:"center",
+    },
     iconRedes: {
         horizontal: 'right',
         "& .MuiSvgIcon-root": {
+            fontSize: "2rem",
             fill: "#286DA8",
-            "&:hover":{
+            "&:hover": {
                 fill: "#CD5360",
                 fontSize: "1.8rem"
             }
@@ -35,8 +45,7 @@ const useStyles = makeStyles(theme => ({
         marginBottom: "3rem",
     },
     typedContainer: {
-        position: "absolute",
-
+        marginTop: theme.spacing(5),
         transform: "traslate(-50%, -50%)",
         width: "100vw",
         textAlign: "center",
@@ -62,9 +71,23 @@ const Header = () => {
                     typeSpeed={80}
                     loop />
             </Typography>
-            <Grid container justify="center">
-                <img src="https://user-images.githubusercontent.com/60799456/92513800-7e26f880-f1d6-11ea-9193-ff7b05f82341.png" alt="" style={{ width: "30%" }} />
-            </Grid>
+                <ListItem>
+                   
+                <img src="https://user-images.githubusercontent.com/60799456/93284513-7ea42e00-f798-11ea-80a5-b63b480a5aea.jpeg" alt="" style={{ width: "40%" }} />
+                
+                <Grid >
+                <Typography className={classes.aboutMeContainer}>
+                    Soy una Ingeniera de Sistemas reinventando su carrera. Me preparé en el bootcamp de programación intensivo de Laboratoria para ser Front-end Developer, en donde desarrollé aplicaciones web utilizando metodologías ágiles, y logré desarrollar mi capacidad de autoaprendizaje. Soy una persona persistente, que no se rinde ante las adversidades, siempre dando lo mejor de mi en el ámbito profesional y personal
+                    <Grid container justify="center" className={classes.iconRedes} >
+                <IconButton href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-burger-queen-api-client/files/5189324/cv_carmen.pdf">
+                    <CloudDownloadIcon />
+                </IconButton>
+                     </Grid>
+                </Typography>
+                    </Grid>
+                </ListItem>
+         
+
             <ListItemIcon alignItems="flex-start" className={classes.iconRedes}>
                 <IconButton href="https://wa.link/ENCI" target="_blank">
                     <Whatsapp />
@@ -79,11 +102,7 @@ const Header = () => {
                     <Email />
                 </IconButton>
             </ListItemIcon>
-            <Grid container justify="center"className={classes.iconRedes} >
-                <IconButton href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-burger-queen-api-client/files/5189324/cv_carmen.pdf">
-                <CloudDownloadIcon/>
-                </IconButton>
-            </Grid>
+           
         </Box>
     )
 }
