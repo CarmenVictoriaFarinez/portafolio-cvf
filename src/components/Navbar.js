@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import MobilRightMenuSlider from '@material-ui/core/Drawer';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
-
-
-
-
 import {
     AppBar,
     Toolbar,
@@ -47,7 +43,7 @@ const useStyles = makeStyles({
 const menuItems = [
     {
         listIcon: <Home />,
-        listText: 'Quien Soy',
+        listText: 'Sobre Mí',
         listPath: "/"
     },
     {
@@ -101,7 +97,7 @@ const Navbar = () => {
                             open={state.right} onClose={toggleSLider("right", false)}
                         >
                             {sideList("right")}
-                            <Footer />
+                            
                         </MobilRightMenuSlider>
                         
                             {menuItems.map((IsItem, key) => (
@@ -110,8 +106,6 @@ const Navbar = () => {
                                 </ListItem>
                             ))} 
                     </Toolbar>
-
-
                 </AppBar>
             </Box>
         </>

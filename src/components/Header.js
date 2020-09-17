@@ -1,25 +1,51 @@
 import React from 'react'
 import {
-    Typography, Grid, Box, ListItemIcon,
+    Typography, Grid, Box, 
     IconButton, ListItem
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Typed from 'react-typed';
-import Whatsapp from '@material-ui/icons/WhatsApp';
-import LinkedIn from '@material-ui/icons/LinkedIn';
-import GitHub from '@material-ui/icons/GitHub';
-import { Email } from '@material-ui/icons';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
+import Footer from './Footer';
 
 // CSS STYLES
 
 const useStyles = makeStyles(theme => ({
-    picMeContainer:{
-        width: theme.spacing(13),
-        height: theme.spacing(13)
+
+
+    
+    itemsContainer:{
+        flexGrow: 1,
     },
+    imgContainer:{
+        "& .MuiListItem-root": {
+        paddingTop:theme.spacing(2),
+        paddingLeft:theme.spacing(8),
+        width: '200px',
+        height:'227px',
+        '@media (min-width:600px)': {
+            width: '330px',
+            height: '390px',
+          paddingLeft:theme.spacing(10),
+        },
+        [theme.breakpoints.up('md')]: {
+          width: '430px',
+          height: '490px',
+          paddingLeft:theme.spacing(18),
+        },
+    }
+},
+    
     aboutMeContainer: {
-        textAlign:"center",
+        textAlign:"justify",
+        paddingRight:theme.spacing(16),
+        fontSize: '0.7rem',
+        '@media (min-width:600px)': {
+          fontSize: '0.9rem',
+        },
+        [theme.breakpoints.up('md')]: {
+          fontSize: '1rem',
+        },
     },
     iconRedes: {
         horizontal: 'right',
@@ -71,39 +97,30 @@ const Header = () => {
                     typeSpeed={80}
                     loop />
             </Typography>
-                <ListItem>
-                   
-                <img src="https://user-images.githubusercontent.com/60799456/93284513-7ea42e00-f798-11ea-80a5-b63b480a5aea.jpeg" alt="" style={{ width: "40%" }} />
-                
-                <Grid >
-                <Typography className={classes.aboutMeContainer}>
-                    Soy una Ingeniera de Sistemas reinventando su carrera. Me preparé en el bootcamp de programación intensivo de Laboratoria para ser Front-end Developer, en donde desarrollé aplicaciones web utilizando metodologías ágiles, y logré desarrollar mi capacidad de autoaprendizaje. Soy una persona persistente, que no se rinde ante las adversidades, siempre dando lo mejor de mi en el ámbito profesional y personal
-                    <Grid container justify="center" className={classes.iconRedes} >
-                <IconButton href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-burger-queen-api-client/files/5189324/cv_carmen.pdf">
-                    <CloudDownloadIcon />
-                </IconButton>
-                     </Grid>
-                </Typography>
-                    </Grid>
-                </ListItem>
-         
 
-            <ListItemIcon alignItems="flex-start" className={classes.iconRedes}>
-                <IconButton href="https://wa.link/ENCI" target="_blank">
-                    <Whatsapp />
-                </IconButton>
-                <IconButton target="_blank" href="https://www.linkedin.com/in/engineercvf/" >
-                    <LinkedIn />
-                </IconButton>
-                <IconButton target="_blank" href="https://github.com/CarmenVictoriaFarinez">
-                    <GitHub />
-                </IconButton>
-                <IconButton target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSczfm55rfx63SAHr2kEBKhMZe_ZAVztR3ReOXU9kELz6rx6GQ/viewform">
-                    <Email />
-                </IconButton>
-            </ListItemIcon>
-           
-        </Box>
+            
+
+            <ListItem className={classes.itemsContainer} >
+
+            <Grid className={classes.imgContainer}>
+                    <img 
+                    src="https://user-images.githubusercontent.com/60799456/93284513-7ea42e00-f798-11ea-80a5-b63b480a5aea.jpeg" 
+                    alt="" />
+                </Grid>
+                
+                <Grid item xs={12} md={8}>
+                    <Typography className={classes.aboutMeContainer}>
+                    "Soy una Ingeniera de Sistemas que ha decidido reinventar su carrera y ser FrontEnd Developer, mi experiencia en el sector tecnológico, siempre estuvo enfocado en el monitoreo de redes y resolución de fallas, ahora me apasiona crear productos. Soy una persona que no se rinde ante las adversidades. Te invito a descargar mi CV para conocerme un poco más."
+                        <Grid container justify="center" className={classes.iconRedes} >
+                    <IconButton href="https://github.com/CarmenVictoriaFarinez/LIM012-fe-burger-queen-api-client/files/5189324/cv_carmen.pdf">
+                    <CloudDownloadIcon />
+                    </IconButton>
+                        </Grid>
+                    </Typography>
+                </Grid>
+            </ListItem>
+            <Footer/>
+            </Box>
     )
 }
 

@@ -4,6 +4,7 @@ import {
     Box, Grid, Card, CardActionArea, CardContent, CardMedia, 
     Button, Typography, CardActions } from '@material-ui/core';
 import Navbar from './Navbar';
+import Footer from './Footer';
 import project1 from '../images/project1.jpg';
 import project2 from '../images/project2.png';
 import project3 from '../images/project3.jpg';
@@ -18,7 +19,7 @@ const useStyles = makeStyles({
     mainContainer:{
         background:"#233",
         height:"100%",
-        textAlign: "center"
+        textAlign: "justify"
     },
     cardContainer:{
         maxWidth:345,
@@ -191,6 +192,7 @@ const classes = useStyles();
             </Grid>
           
         </Grid>
+        <Footer/>
         </Box>
     )
 }

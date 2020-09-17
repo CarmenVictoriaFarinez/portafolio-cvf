@@ -8,12 +8,10 @@ body{
   
 
 }
-.img-descarga{
-  display: flex;
-  flex-direction: row;
-  width:"40%";
-  margin-left: "760%";
+.MuiListItem-root{
+
 }
+
 .MuiGrid-container {
   background-color:#FFFFFF;
 }
