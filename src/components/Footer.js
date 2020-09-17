@@ -10,6 +10,7 @@ const useStyles= makeStyles ({
 
     footerContainer: {
         width: "100vw",
+        
        
     },
         iconRedes: {
@@ -30,7 +31,7 @@ const useStyles= makeStyles ({
 const Footer = () => {
     const classes = useStyles();
     return (
-        <Box className={classes.footerContainer} component="div" style={{ background: '#B37D4E' }}>
+        <Box  textAlign="center" style={{ background: '#B37D4E' }}>
         <Typography>
             Contáctame
         </Typography>

@@ -7,46 +7,50 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typed from 'react-typed';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import Footer from './Footer';
+import foto from '../images/foto.jpeg';
 
 // CSS STYLES
 
 const useStyles = makeStyles(theme => ({
-
-
-    
-    itemsContainer:{
-        flexGrow: 1,
-    },
-    imgContainer:{
-        "& .MuiListItem-root": {
-        paddingTop:theme.spacing(2),
-        paddingLeft:theme.spacing(8),
-        width: '200px',
-        height:'227px',
-        '@media (min-width:600px)': {
-            width: '330px',
-            height: '390px',
-          paddingLeft:theme.spacing(10),
+    aboutMeContainer: {
+        textAlign:"justify",
+        
+        [theme.breakpoints.down('sm')]: {
+            paddingLeft:theme.spacing(8),
+            fontSize: '0.7rem',
         },
         [theme.breakpoints.up('md')]: {
-          width: '430px',
-          height: '490px',
-          paddingLeft:theme.spacing(18),
+            fontSize: '0.9rem',
+            paddingLeft:theme.spacing(10),
+        },
+        [theme.breakpoints.up('lg')]: {
+            fontSize: '1rem',
+            paddingLeft:theme.spacing(18),
+        }
+    },
+
+    itemsContainer:{
+        width: "100vw",
+    },
+    imgContainer:{
+        ".MuiGrid-root": {
+        
+        width: '100px',
+        height:'127px',
+        '@media (min-width:600px)': {
+            width: '230px',
+            height: '290px',
+          
+        },
+        [theme.breakpoints.up('md')]: {
+          width: '330px',
+          height: '390px',
+          
         },
     }
 },
     
-    aboutMeContainer: {
-        textAlign:"justify",
-        paddingRight:theme.spacing(16),
-        fontSize: '0.7rem',
-        '@media (min-width:600px)': {
-          fontSize: '0.9rem',
-        },
-        [theme.breakpoints.up('md')]: {
-          fontSize: '1rem',
-        },
-    },
+    
     iconRedes: {
         horizontal: 'right',
         "& .MuiSvgIcon-root": {
@@ -72,10 +76,10 @@ const useStyles = makeStyles(theme => ({
     },
     typedContainer: {
         marginTop: theme.spacing(10),
-        transform: "traslate(-50%, -50%)",
+        
         width: "100vw",
         textAlign: "center",
-        zIndex: 1
+        
     }
 
 }));
@@ -100,15 +104,17 @@ const Header = () => {
 
             
 
-            <ListItem className={classes.itemsContainer} >
-
-            <Grid className={classes.imgContainer}>
+            <ListItem className={classes.itemsContainer}  >
+ 
+            <Grid >
+                <picture className={classes.imgContainer} >
                     <img 
-                    src="https://user-images.githubusercontent.com/60799456/93284513-7ea42e00-f798-11ea-80a5-b63b480a5aea.jpeg" 
+                    src= {foto}
                     alt="" />
+                </picture>
                 </Grid>
                 
-                <Grid item xs={12} md={8}>
+                <Grid items lg={12}>
                     <Typography className={classes.aboutMeContainer}>
                     "Soy una Ingeniera de Sistemas que ha decidido reinventar su carrera y ser FrontEnd Developer, mi experiencia en el sector tecnológico, siempre estuvo enfocado en el monitoreo de redes y resolución de fallas, ahora me apasiona crear productos. Soy una persona que no se rinde ante las adversidades. Te invito a descargar mi CV para conocerme un poco más."
                         <Grid container justify="center" className={classes.iconRedes} >
