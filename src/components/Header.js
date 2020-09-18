@@ -1,7 +1,7 @@
 import React from 'react'
 import {
     Typography, Grid, Box, 
-    IconButton, ListItem
+    IconButton, Card, CardMedia, CardContent
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Typed from 'react-typed';
@@ -13,43 +13,19 @@ import foto from '../images/foto.jpeg';
 
 const useStyles = makeStyles(theme => ({
     aboutMeContainer: {
-        textAlign:"justify",
-        
-        [theme.breakpoints.down('sm')]: {
-            paddingLeft:theme.spacing(8),
-            fontSize: '0.7rem',
-        },
-        [theme.breakpoints.up('md')]: {
-            fontSize: '0.9rem',
-            paddingLeft:theme.spacing(10),
-        },
-        [theme.breakpoints.up('lg')]: {
-            fontSize: '1rem',
-            paddingLeft:theme.spacing(18),
-        }
+        maxWidth:360,
+        maxHeight:350,
+        margin:"1rem",
+        textAlign: "justify"
     },
 
-    itemsContainer:{
-        width: "100vw",
-    },
     imgContainer:{
-        ".MuiGrid-root": {
-        
-        width: '100px',
-        height:'127px',
-        '@media (min-width:600px)': {
-            width: '230px',
-            height: '290px',
-          
-        },
-        [theme.breakpoints.up('md')]: {
-          width: '330px',
-          height: '390px',
-          
-        },
-    }
+        maxWidth:260,
+        maxHeight:300,
+        marginTop:"1rem",
+        marginLeft:"9rem",
+        textAlign: "center"
 },
-    
     
     iconRedes: {
         horizontal: 'right',
@@ -104,17 +80,19 @@ const Header = () => {
 
             
 
-            <ListItem className={classes.itemsContainer}  >
- 
-            <Grid >
-                <picture className={classes.imgContainer} >
-                    <img 
-                    src= {foto}
-                    alt="" />
-                </picture>
-                </Grid>
+            
+        <Grid container justify="center">
+            <Grid item xs={14} sm={8} md={6}>
+                <Card className={classes.imgContainer}>
+                <CardContent>
+                    <img src= { foto } alt="" />
+                </CardContent>
+                </Card>
+            </Grid>
                 
-                <Grid items lg={12}>
+            <Grid item xs={10} sm={8} md={6}>
+                <Card className={classes.aboutMeContainer}>
+                    <CardContent>
                     <Typography className={classes.aboutMeContainer}>
                     "Soy una Ingeniera de Sistemas que ha decidido reinventar su carrera y ser FrontEnd Developer, mi experiencia en el sector tecnológico, siempre estuvo enfocado en el monitoreo de redes y resolución de fallas, ahora me apasiona crear productos. Soy una persona que no se rinde ante las adversidades. Te invito a descargar mi CV para conocerme un poco más."
                         <Grid container justify="center" className={classes.iconRedes} >
@@ -123,8 +101,10 @@ const Header = () => {
                     </IconButton>
                         </Grid>
                     </Typography>
-                </Grid>
-            </ListItem>
+                    </CardContent>
+                </Card>
+            </Grid>
+            </Grid>
             <Footer/>
             </Box>
     )
