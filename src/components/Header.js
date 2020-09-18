@@ -65,6 +65,7 @@ const Header = () => {
     const classes = useStyles()
     return (
         <Box className={classes.typedContainer} >
+         <Grid>
             <Typography className={classes.title} variant="h4">
                 <Typed
                     strings={['Mi nombre es Carmen Victoria']} typeSpeed={40} />
@@ -76,7 +77,13 @@ const Header = () => {
                     typeSpeed={60}
                     typeSpeed={80}
                     loop />
+
+                     <hr className="decoratorLine"></hr>
+                    </Typography>
+                    <Typography variant="h9">
+            | HTML/CSS | JavaScript | Angular | React  | NodeJS | Bootstrap | Material UI | Firebase | 
             </Typography>
+        </Grid>
 
             
 

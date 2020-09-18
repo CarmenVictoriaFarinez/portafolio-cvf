@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import MobilRightMenuSlider from '@material-ui/core/Drawer';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
+import NavMini from './NavMini';
+
 import {
     AppBar,
     Toolbar,
@@ -107,6 +109,7 @@ const Navbar = () => {
                             ))} 
                     </Toolbar>
                 </AppBar>
+               
             </Box>
         </>
     )

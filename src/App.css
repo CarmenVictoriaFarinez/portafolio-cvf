@@ -8,8 +8,12 @@ body{
   
 
 }
-.MuiListItem-root{
-
+.decoratorLine{
+    border-top: 5px dotted #CD5360;
+    width: 50%;
+    margin: auto;
+    
+  
 }
 
 .MuiGrid-container {
