@@ -24,8 +24,10 @@ const useStyles = makeStyles({
     cardContainer:{
         maxWidth:345,
         margin:"3rem",
-        margin:"5rem auto",
-        
+        margin:"5rem auto",  
+    },
+    typoText:{
+        fontFamily: 'Lato sans-serif' ,
     }
 });
 
@@ -45,11 +47,11 @@ const classes = useStyles();
                 height="180"
                 image= {project1}
                 />
-                <CardContent>
-                <Typography gutterBottom variant="h5">
+                <CardContent  >
+                <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center"}} >
                 RED SOCIAL MOVES
                 </Typography >
-                <Typography variant="body2" color="textSecundary" component="p" >
+                <Typography variant="body2" color="textSecundary" component="p" className={classes.typoText}>
                 MOVES es un aplicación (SPA), responsiva en la que podamos escribir, leer, actualizar y eliminar datos. Es una red social para los amantes del baile de todos los géneros musicales. Este proyecto fue realizado utilizando la metodología Scrum.
                 </Typography>
                 </CardContent>
@@ -77,10 +79,10 @@ const classes = useStyles();
                 image= {project2}
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5">
+                <Typography gutterBottom variant="h5" style={{ color: '#B37D4E', textAlign: "center"}} >
                 Burger Queen (API Client)
                 </Typography >
-                <Typography variant="body2" color="textSecundary" component="p">
+                <Typography variant="body2" color="textSecundary" component="p"className={classes.typoText}>
                 Aplicación Single Page App (SPA), implementada en Angular, consume información a través de una Application Programming Interface (API) que se conecta vía web a través del protocolo HTTP. Su objetivo es facilitar el sistema de pedidos de un restaurante.
                 </Typography>
                 </CardContent>
@@ -108,10 +110,10 @@ const classes = useStyles();
                 image= {project3}
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5">
+                <Typography gutterBottom variant="h5" style={{ color: '#438496' , textAlign: "center"}}>
                 Library Markdown Links
                 </Typography >
-                <Typography variant="body2" color="textSecundary" component="p">
+                <Typography variant="body2" color="textSecundary" component="p" className={classes.typoText}>
                 El objetivo de este proyecto fue crear una librería implementada en JavaScript, y ejecutada usando Node.js, que lea y analice archivos en formato Markdown, para verificar los links que contengan y reportar algunas estadísticas.
                 </Typography>
                 </CardContent>
@@ -139,10 +141,10 @@ const classes = useStyles();
                 image= {project5}
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5">
+                <Typography gutterBottom variant="h5" style={{ color: '#B37D4E', textAlign: "center"}}>
                 Piano React
                 </Typography >
-                <Typography variant="body2" color="textSecundary" component="p">
+                <Typography variant="body2" color="textSecundary" component="p"className={classes.typoText}>
                 El objetivo de este proyecto fue aprender los conceptos básicos de React, tuve la inicitiva de inscribirme en un WorkShop de Iniciación, en el cual fuimos guiados para finalmente, obtener este hermoso Piano.
                 </Typography>
                 </CardContent>
@@ -169,10 +171,10 @@ const classes = useStyles();
                 image= {project4}
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5">
+                <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center"}}>
                 Data Lovers Olympic History
                 </Typography >
-                <Typography variant="body2" color="textSecundary" component="p">
+                <Typography variant="body2" color="textSecundary" component="p"className={classes.typoText}>
                 El objetivo de este proyecto fue aprender a visualizar y manipular data. Esta app permite al usuario visualizar a los atletas por nombre, deporte practicado y pais representado, a partir de esa data, permite ordenarla alfabeticamente y filtrar a los atletas por deporte.
                 </Typography>
                 </CardContent>

@@ -1,7 +1,7 @@
 import React from 'react'
 import {
     Typography, Grid, Box, 
-    IconButton, Card, CardMedia, CardContent
+    IconButton, Card, CardContent
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Typed from 'react-typed';
@@ -9,14 +9,17 @@ import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import Footer from './Footer';
 import foto from '../images/foto.jpeg';
 
+
 // CSS STYLES
 
 const useStyles = makeStyles(theme => ({
+    
     aboutMeContainer: {
         maxWidth:360,
         maxHeight:350,
         margin:"1rem",
-        textAlign: "justify"
+        textAlign: "justify",
+        fontFamily: 'Lato sans-serif' ,
     },
 
     imgContainer:{
@@ -24,7 +27,8 @@ const useStyles = makeStyles(theme => ({
         maxHeight:300,
         marginTop:"1rem",
         marginLeft:"9rem",
-        textAlign: "center"
+        textAlign: "center",
+        fontFamily: 'Lato sans-serif' ,
 },
     
     iconRedes: {
@@ -44,15 +48,19 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(15),
     },
     title: {
+        fontFamily: 'Lato sans-serif' ,
         color: "#CD5360",
     },
     subtitle: {
         color: "#286DA8",
         marginBottom: "3rem",
+        fontFamily: 'Lato sans-serif' ,
+        fontSize: "1.3rem"
+        
     },
     typedContainer: {
         marginTop: theme.spacing(10),
-        
+        fontFamily: 'Lato sans-serif' ,
         width: "100vw",
         textAlign: "center",
         
@@ -64,8 +72,9 @@ const useStyles = makeStyles(theme => ({
 const Header = () => {
     const classes = useStyles()
     return (
+        
         <Box className={classes.typedContainer} >
-         <Grid>
+         <Grid >
             <Typography className={classes.title} variant="h4">
                 <Typed
                     strings={['Mi nombre es Carmen Victoria']} typeSpeed={40} />
@@ -73,21 +82,18 @@ const Header = () => {
             <br />
             <Typography className={classes.subtitle} variant="h5">
                 <Typed
-                    strings={['Front End Developer ', 'Ingenier❤️ de Sistemas']}
+                    strings={['Frontend Developer ', 'Ingenier❤️ de Sistemas']}
                     typeSpeed={60}
                     typeSpeed={80}
                     loop />
-
                      <hr className="decoratorLine"></hr>
                     </Typography>
-                    <Typography variant="h9">
-            | HTML/CSS | JavaScript | Angular | React  | NodeJS | Bootstrap | Material UI | Firebase | 
+                    <Typography className={classes.subtitle} >
+            | HTML | SCSS | JavaScript | Angular | React  | NodeJS | Bootstrap | Material UI | Firebase | 
             </Typography>
         </Grid>
 
-            
-
-            
+         
         <Grid container justify="center">
             <Grid item xs={14} sm={8} md={6}>
                 <Card className={classes.imgContainer}>

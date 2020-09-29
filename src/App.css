@@ -5,16 +5,28 @@ body{
   -moz-background: cover;
   -o-background: cover;
   background: cover;
+  font-family: 'Lato', sans-serif;
   
 
 }
-.decoratorLine{
-    border-top: 5px dotted #CD5360;
-    width: 50%;
-    margin: auto;
-    
-  
+.body1{
+  font-family: 'Lato', sans-serif;
 }
+.decoratorContainer{
+    display: flex;
+    width: 80%;
+    height: 377px;
+    background: blue;
+    opacity: 0.2;
+    border-radius: 10px;
+
+}
+.decoratorLine{
+  border-top: 5px dotted #CD5360;
+  width: 50%;
+  margin: auto;
+}
+
 
 .MuiGrid-container {
   background-color:#FFFFFF;

@@ -7,11 +7,13 @@ import { Email } from '@material-ui/icons';
 import Whatsapp from '@material-ui/icons/WhatsApp';
 
 const useStyles= makeStyles ({
-
+    typoContact:{
+        fontFamily: 'Lato sans-serif' ,
+        color: 'white',
+        fontSize: "1.3rem"
+    },
     footerContainer: {
         width: "100vw",
-        
-       
     },
         iconRedes: {
             horizontal: 'right',
@@ -32,7 +34,7 @@ const Footer = () => {
     const classes = useStyles();
     return (
         <Box  textAlign="center" style={{ background: '#B37D4E' }}>
-        <Typography>
+        <Typography className={classes.typoContact}>
             Contáctame
         </Typography>
         <ListItemIcon className={classes.iconRedes}>
@@ -49,7 +51,7 @@ const Footer = () => {
             <Email />
         </IconButton>
     </ListItemIcon>
-    <Typography>
+    <Typography className={classes.typoContact}>
         Copyright © 2020 Carmen V. Fariñez
         </Typography>
     </Box>

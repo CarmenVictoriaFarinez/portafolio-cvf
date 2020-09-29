@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import MobilRightMenuSlider from '@material-ui/core/Drawer';
 import { Link } from 'react-router-dom';
-import Footer from './Footer';
-import NavMini from './NavMini';
+import { MenuItem, Typography } from '@material-ui/core';
 
 import {
     AppBar,
@@ -18,14 +17,15 @@ import {
 } from '@material-ui/core'
 
 import {
-    Home, Apps, Toys
+    Home, Apps
 } from '@material-ui/icons'
+
 import { makeStyles, createMuiTheme } from '@material-ui/core/styles';
 
 // CSS STYLE
 const theme = createMuiTheme();
 const useStyles = makeStyles({
-   
+    
     menuContainer: {
         width: 250,
         background: '#CD5360',
@@ -38,20 +38,36 @@ const useStyles = makeStyles({
         height: theme.spacing(13)
     },
     listItem: {
-        color: 'white',
+        color: "white",
+        fontSize: "1.3rem"
+       
     },
+    menuButton:{
+        marginRight: theme.spacing(2),
+    },
+    title:{
+        textDecoration:"none",
+        color: "white",
+        fontFamily: 'Lato sans-serif' ,
+        flexGrow:1,
+    }
 });
 
 const menuItems = [
     {
-        listIcon: <Home />,
-        listText: 'Sobre Mí',
-        listPath: "/"
+        listIcon: <Apps />,
+        listText: 'Skills',
+        listPath: "/skills"
     },
     {
         listIcon: <Apps />,
         listText: 'Mis Proyectos',
         listPath: "/misproyectos"
+    },
+    {
+        listIcon: <Home />,
+        listText: 'Sobre Mí',
+        listPath: "/"
     }
 ]
 
@@ -76,8 +92,8 @@ const Navbar = () => {
             <List>
                 {menuItems.map((IsItem, key) => (
                     <ListItem button key={key} component={Link} to={IsItem.listPath} >
-                        <ListItemIcon className={classes.listItem} >{IsItem.listIcon}</ListItemIcon>
-                        <ListItemText className={classes.listItem} primary={IsItem.listText} />
+                        <ListItemIcon >{IsItem.listIcon}</ListItemIcon>
+                        <ListItemText primary={IsItem.listText} />
                     </ListItem>
                 ))}
             </List>
@@ -90,10 +106,19 @@ const Navbar = () => {
                 <AppBar position='fixed' style={{ background: '#286DA8' }}>
 
                     <Toolbar >
-                        <IconButton onClick={toggleSLider("right", true)}>
-                            <Toys />
+                        <IconButton onClick={toggleSLider("right", true)} >
+                           
                         </IconButton>
-
+                        <Typography component={Link} to="/" variant="h6" className={classes.title} >
+                            VickyCar
+                        </Typography>
+                        <MenuItem className={classes.listItem}>
+                            {menuItems.map((IsItem, key) => (
+                                <ListItem  button key={key} component={Link} to={IsItem.listPath} >
+                                <ListItemText  className={classes.listItemText} primary={IsItem.listText} />
+                                </ListItem>
+                            ))} 
+                        </MenuItem>
                         <MobilRightMenuSlider
                             anchor="right"
                             open={state.right} onClose={toggleSLider("right", false)}
@@ -101,12 +126,6 @@ const Navbar = () => {
                             {sideList("right")}
                             
                         </MobilRightMenuSlider>
-                        
-                            {menuItems.map((IsItem, key) => (
-                                <ListItem  button key={key} component={Link} to={IsItem.listPath} >
-                                <ListItemText className={classes.listItem} primary={IsItem.listText} />
-                                </ListItem>
-                            ))} 
                     </Toolbar>
                 </AppBar>
                
