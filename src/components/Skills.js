@@ -3,7 +3,20 @@ import ReactCardFlip from 'react-card-flip';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { Box, Grid, Card, CardContent, Typography } from '@material-ui/core';
+
+import logos_html from '../images/Portafolio/logos_html.png';
+import logos_sass from '../images/Portafolio/logos_sass.png';
+import logos_javascript from '../images/Portafolio/logos_javascript.png';
+import logos_npm from '../images/Portafolio/logos_npm.png';
+import logos_nodejs from '../images/Portafolio/logos_nodejs.png';
+import logos_angular from '../images/Portafolio/logos_angular.png';
 import react from '../images/Portafolio/react.png';
+import logos_jest from '../images/Portafolio/logos_jest.png';
+import logos_trello from '../images/Portafolio/logos_trello.png';
+import github from '../images/Portafolio/github.png';
+import logos_css from '../images/Portafolio/logos_css.png';
+import logos_firebase from '../images/Portafolio/logos_firebase.png';
+
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
@@ -39,9 +52,9 @@ const Skills = () => {
         <Grid item xs={8} sm={4} md={2}>
         <Card className={classes.cardContainer} >
             <CardContent style={{ textAlign: "center"}}>
-            <img src= { react } alt="" />
+            <img src= { logos_html} alt="" />
             <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center", fontFamily: 'Lato sans-serif' }}>
-                React
+                HTML
             </Typography >
             </CardContent>
             </Card>
@@ -50,9 +63,9 @@ const Skills = () => {
         <Grid item xs={8} sm={4} md={2}>
         <Card className={classes.cardContainer}>
             <CardContent style={{ textAlign: "center"}}>
-            <img src= { react } alt="" />
+            <img src= { logos_sass } alt="" />
             <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center", fontFamily: 'Lato sans-serif' }}>
-                React
+                SASS
                 </Typography >
             </CardContent>
             </Card>
@@ -61,9 +74,9 @@ const Skills = () => {
         <Grid item xs={8} sm={4} md={2}>
         <Card className={classes.cardContainer} >
             <CardContent   style={{ textAlign: "center"}} >
-            <img src= { react } alt="" />
+            <img src= { logos_javascript } alt="" />
             <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center", fontFamily: 'Lato sans-serif' }}>
-                React
+               JAVASCRIPT
                 </Typography >
             </CardContent>
             </Card>
@@ -72,9 +85,9 @@ const Skills = () => {
         <Grid item xs={8} sm={4} md={2}>
         <Card className={classes.cardContainer} >
             <CardContent  style={{ textAlign: "center"}} >
-            <img src= { react } alt="" />
+            <img src= { logos_npm } alt="" />
             <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center", fontFamily: 'Lato sans-serif' }}>
-                React
+               NPM
                 </Typography >
             </CardContent>
             </Card>
@@ -83,9 +96,9 @@ const Skills = () => {
         <Grid item xs={8} sm={4} md={2}>
         <Card className={classes.cardContainer} >
             <CardContent   style={{ textAlign: "center"}} >
-            <img src= { react } alt="" />
+            <img src= { logos_nodejs } alt="" />
             <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center", fontFamily: 'Lato sans-serif' }}>
-                React
+                NODE.JS
                 </Typography >
             </CardContent>
             </Card>
@@ -94,9 +107,9 @@ const Skills = () => {
         <Grid item xs={8} sm={4} md={2}>
         <Card className={classes.cardContainer} >
             <CardContent   style={{ textAlign: "center"}} >
-            <img src= { react } alt="" />
+            <img src= { logos_angular } alt="" />
             <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center", fontFamily: 'Lato sans-serif' }}>
-                React
+                ANGULAR
                 </Typography >
             </CardContent>
             </Card>
@@ -107,7 +120,7 @@ const Skills = () => {
             <CardContent  style={{ color: '#CD5360', textAlign: "center"}} >
             <img src= { react } alt="" />
             <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center", fontFamily: 'Lato sans-serif' }}>
-                React
+                REACT
                 </Typography >
             </CardContent>
             </Card>
@@ -116,9 +129,9 @@ const Skills = () => {
         <Grid item xs={8} sm={4} md={2}>
         <Card className={classes.cardContainer} >
             <CardContent  style={{ textAlign: "center"}} >
-            <img src= { react } alt="" />
+            <img src= { logos_jest } alt="" />
             <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center", fontFamily: 'Lato sans-serif' }}>
-                React
+                JEST
                 </Typography >
             </CardContent>
             </Card>
@@ -127,9 +140,9 @@ const Skills = () => {
         <Grid item xs={8} sm={4} md={2}>
         <Card className={classes.cardContainer} >
             <CardContent   style={{ textAlign: "center"}} >
-            <img src= { react } alt="" />
+            <img src= { logos_trello } alt="" />
             <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center", fontFamily: 'Lato sans-serif' }}>
-                React
+                TRELLO
                 </Typography >
             </CardContent>
             </Card>
@@ -138,9 +151,9 @@ const Skills = () => {
         <Grid item xs={8} sm={4} md={2}>
         <Card className={classes.cardContainer} >
             <CardContent style={{ color: '#CD5360', textAlign: "center"}} >
-            <img src= { react } alt="" />
+            <img src= { github } alt="" />
             <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center", fontFamily: 'Lato sans-serif' }}>
-                React
+                GITHUB
                 </Typography >
             </CardContent>
             </Card>
@@ -149,9 +162,9 @@ const Skills = () => {
         <Grid item xs={8} sm={4} md={2}>
         <Card className={classes.cardContainer} >
             <CardContent style={{ color: '#CD5360', textAlign: "center"}} >
-            <img src= { react } alt="" />
+            <img src= { logos_css } alt="" />
             <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center", fontFamily: 'Lato sans-serif' }}>
-                React
+                CSS
                 </Typography >
             </CardContent>
             </Card>
@@ -160,9 +173,9 @@ const Skills = () => {
         <Grid item xs={8} sm={4} md={2}>
         <Card className={classes.cardContainer} >
             <CardContent  style={{ textAlign: "center"}} >
-            <img src= { react } alt="" />
+            <img src= { logos_firebase } alt="" />
             <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center", fontFamily: 'Lato sans-serif' }}>
-                React
+                FIREBASE
                 </Typography >
             </CardContent>
             </Card>
