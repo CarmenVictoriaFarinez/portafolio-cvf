@@ -55,7 +55,7 @@ const useStyles = makeStyles(theme => ({
         color: "#286DA8",
         marginBottom: "3rem",
         fontFamily: 'Lato sans-serif' ,
-        fontSize: "1.3rem"
+        fontSize: "1.5rem"
         
     },
     typedContainer: {

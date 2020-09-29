@@ -61,7 +61,7 @@ const menuItems = [
     },
     {
         listIcon: <Apps />,
-        listText: 'Mis Proyectos',
+        listText: 'Portafolio',
         listPath: "/misproyectos"
     },
     {

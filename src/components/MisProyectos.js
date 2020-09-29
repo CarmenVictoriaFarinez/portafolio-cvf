@@ -28,6 +28,13 @@ const useStyles = makeStyles({
     },
     typoText:{
         fontFamily: 'Lato sans-serif' ,
+    },
+    subtitle: {
+        fontFamily: 'Lato sans-serif' ,
+        color: "#286DA8",
+        fontSize: "2.3rem",
+        textAlign: "center",
+        marginTop: "5rem",
     }
 });
 
@@ -35,8 +42,12 @@ const useStyles = makeStyles({
 const MisProyectos = () => {
 const classes = useStyles();
     return (
-        <Box component="div" className={classes.mainContainer}>
+        <Box component="div" >
         <Navbar/>
+        <Typography className={classes.subtitle} >
+            Mis Proyectos
+            </Typography>
+            <hr className="decoratorLine"></hr>
         <Grid container justify="center" >
             { /* Project 1 */ }
             <Grid item xs={12} sm={8} md={6}>
@@ -48,8 +59,8 @@ const classes = useStyles();
                 image= {project1}
                 />
                 <CardContent  >
-                <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center"}} >
-                RED SOCIAL MOVES
+                <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center", fontFamily: 'Lato sans-serif' }} >
+                Red Social Moves
                 </Typography >
                 <Typography variant="body2" color="textSecundary" component="p" className={classes.typoText}>
                 MOVES es un aplicación (SPA), responsiva en la que podamos escribir, leer, actualizar y eliminar datos. Es una red social para los amantes del baile de todos los géneros musicales. Este proyecto fue realizado utilizando la metodología Scrum.
@@ -79,11 +90,11 @@ const classes = useStyles();
                 image= {project2}
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5" style={{ color: '#B37D4E', textAlign: "center"}} >
+                <Typography gutterBottom variant="h5" style={{ color: '#B37D4E', textAlign: "center", fontFamily: 'Lato sans-serif' }} >
                 Burger Queen (API Client)
                 </Typography >
                 <Typography variant="body2" color="textSecundary" component="p"className={classes.typoText}>
-                Aplicación Single Page App (SPA), implementada en Angular, consume información a través de una Application Programming Interface (API) que se conecta vía web a través del protocolo HTTP. Su objetivo es facilitar el sistema de pedidos de un restaurante.
+                Aplicación Single Page App (SPA), implementada en Angular, consume información a través de una (API) que se conecta vía web a través del protocolo HTTP. Su objetivo es facilitar el sistema de pedidos de un restaurante.
                 </Typography>
                 </CardContent>
                 </CardActionArea>
@@ -110,7 +121,7 @@ const classes = useStyles();
                 image= {project3}
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5" style={{ color: '#438496' , textAlign: "center"}}>
+                <Typography gutterBottom variant="h5" style={{ color: '#438496' , textAlign: "center", fontFamily: 'Lato sans-serif' }}>
                 Library Markdown Links
                 </Typography >
                 <Typography variant="body2" color="textSecundary" component="p" className={classes.typoText}>
@@ -141,7 +152,7 @@ const classes = useStyles();
                 image= {project5}
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5" style={{ color: '#B37D4E', textAlign: "center"}}>
+                <Typography gutterBottom variant="h5" style={{ color: '#B37D4E', textAlign: "center", fontFamily: 'Lato sans-serif' }}>
                 Piano React
                 </Typography >
                 <Typography variant="body2" color="textSecundary" component="p"className={classes.typoText}>
@@ -171,7 +182,7 @@ const classes = useStyles();
                 image= {project4}
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center"}}>
+                <Typography gutterBottom variant="h5" style={{ color: '#CD5360', textAlign: "center", fontFamily: 'Lato sans-serif' }}>
                 Data Lovers Olympic History
                 </Typography >
                 <Typography variant="body2" color="textSecundary" component="p"className={classes.typoText}>
