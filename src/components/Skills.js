@@ -3,7 +3,7 @@ import ReactCardFlip from 'react-card-flip';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { Box, Grid, Card, CardContent, Typography } from '@material-ui/core';
-import react from '../images/react.png';
+import react from '../images/Portafolio/react.png';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
