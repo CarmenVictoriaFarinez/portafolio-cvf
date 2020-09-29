@@ -56,13 +56,13 @@ const useStyles = makeStyles({
 const menuItems = [
     {
         listIcon: <Apps />,
-        listText: 'Skills',
-        listPath: "/skills"
+        listText: 'Portafolio',
+        listPath: "/misproyectos"
     },
     {
         listIcon: <Apps />,
-        listText: 'Portafolio',
-        listPath: "/misproyectos"
+        listText: 'Skills',
+        listPath: "/skills"
     },
     {
         listIcon: <Home />,

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import ReactCardFlip from 'react-card-flip';
+import React from 'react';
+
 import Navbar from './Navbar';
 import Footer from './Footer';
 import { Box, Grid, Card, CardContent, Typography } from '@material-ui/core';
